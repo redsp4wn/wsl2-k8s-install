@@ -37,9 +37,9 @@ wsl --install
 ```
 wsl curl -Lo /usr/bin/kind https://kind.sigs.k8s.io/dl/v0.10.0/kind-linux-amd64
 
-chmod +x /usr/bin/kind
+wsl chmod +x /usr/bin/kind
 
-kind version
+wsl kind version
 ```
 2、在 PowerShell 中运行以下命令以创建一个名为 kind 的集群
 ```powershell
