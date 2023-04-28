@@ -30,7 +30,7 @@ wsl --install
   ]
 }
 ```
-![设置3](Screenshots\docker-mirrors.png "Magic Gardens")
+![设置3](Screenshots/docker-mirrors.png "Magic Gardens")
 
 ## 安装 Kubernetes
 1、下载kind二进制文件
