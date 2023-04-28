@@ -13,10 +13,24 @@ wsl --install
 
 ## 安装 Docker Desktop
 1、下载 [Docker Desktop](https://docs.docker.com/docker-for-windows/wsl/#download) 并按照安装说明进行操作。
+
 2、确保在“设置”>“常规”中选中“使用基于 WSL 2 的引擎”。
 ![设置1](https://learn.microsoft.com/zh-cn/windows/wsl/media/docker-running.png "Magic Gardens")
+
 3、通过转到“设置”>“资源”>“WSL 集成”，从要启用 Docker 集成的已安装 WSL 2 发行版中进行选择。
 ![设置2](https://learn.microsoft.com/zh-cn/windows/wsl/media/docker-dashboard.png "Magic Gardens")
+
+4、设置docker镜像加速，修改设置中的Docker Engine配置文件，将镜像加速器地址添加到配置文件中。
+```json
+{//实例镜像地址不一定生效，建议使用阿里云镜像加速器地址
+  "registry-mirrors": [
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://hub-mirror.c.163.com",
+    "https://mirror.baidubce.com"
+  ]
+}
+```
+![设置3](Screenshots\docker-mirrors.png "Magic Gardens")
 
 ## 安装 Kubernetes
 1、下载kind二进制文件
